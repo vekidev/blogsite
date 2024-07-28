@@ -32,5 +32,3 @@ def blogpage(blogid):
 @app.route("/blog")
 def blogmain():
     return render_template("blogpage.html",blogs=blogs)
-
-app.run()
