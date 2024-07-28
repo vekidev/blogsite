@@ -14,7 +14,7 @@ for i in blogmetaraw:
 
 print(blogmeta)
 
-for ind, blog in enumerate(os.listdir("./templates/blogs")):
+for ind, blog in enumerate(os.listdir("./api/templates/blogs")):
     if blog.endswith(".html"):
         blogs.append([blog.removesuffix(".html"),"/blog/"+blog.removesuffix(".html"),blogmeta.get(blog,["unknown",blog.removesuffix('.html')])])
 
