@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/home/vekidev/blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="title">/home/vekidev/blogs/{{ id }}$</a>
+        <div class="nav">
+            <a href="#">blog</a>
+            <a href="#">projects</a>
+            <a href="#">contact</a>
+            <a href="#">stuff</a>
+        </div>
+    </header>
+    <article>
+        <div class="subnav">
+            <a href="/">home</a> =>
+            <a href="/blog">blog</a> =>
+            {{ id }}
+        </div>
+        <h1>Welcome to my blog!</h1>
+        <h3>
+            This is just a test blog post. If you are seeing this, then it means it works!!!
+        </h3>
+        <h1>This is just a test.</h1>
+        <p>
+            Here is some content. 
+            <span class="bold">Bold text.</span> 
+            <span class="cross">Not important stuff.</span>
+            <a href="/">homepage</a>
+        </p>
+        <p>
+            There should be a code window, a picture and some more stuff below.
+        </p>
+    </article>
+</body>
+</html>
