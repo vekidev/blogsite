@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 blogs = []
-with open("templates/blogs/metadata.txt","r") as f:
+with open("./api/templates/blogs/metadata.txt","r") as f:
     blogmetaraw = f.read().split('\n')
     f.close()
 
