@@ -28,7 +28,9 @@ def blogpage(blogid):
         return render_template(f"blogs/{blogid}.html",id=blogid)
     except:
         return "oh well..."
-    
+
 @app.route("/blog")
 def blogmain():
     return render_template("blogpage.html",blogs=blogs)
+
+app.run()
