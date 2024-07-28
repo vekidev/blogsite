@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/home/vekidev/blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="title">/home/vekidev/blogs/{{ id }}$</a>
+        <div class="nav">
+            <a href="/blog" class="activenav">blog</a>
+            <a href="#">projects</a>
+            <a href="#">contact</a>
+            <a href="#">stuff</a>
+        </div>
+    </header>
+    <article>
+        <div class="subnav">
+            <a href="/">home</a> =>
+            blog
+        </div>
+        <h1>My blogs</h1>
+        <h3>
+            Here you will find all my blogs that i ever posted. There are no hidden ones, trust me. ;)
+        </h3>
+        {% for blog in blogs %}
+            <a href={{ blog[1] }} class="pastblog">
+                <span>{{ blog[2][1] }}</span>
+                <span class="postdate">{{ blog[2][0] }}</span>
+            </a>
+        {% endfor %}
+    </article>
+</body>
+</html>
